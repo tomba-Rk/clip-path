@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: circle(0px at center);
+}
+
+.container{
+    position: relative;
+    margin-top: 200vh;
+    background: #fff;
+    padding:250px 100px;
+}
+
+.container h2{
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+.container .text{
+    font-size: 2.5rem;
+}
+
+.title{
+    position: relative;
+    top: 250px;
+    z-index: 1;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path Transform</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2 class="title">Scroll to see the magic again...</h2>
+    <section></section>
+    <div class="container">
+        <h2>Also watch the part 1 and 2... Link in the description</h2>
+        <p class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae facere adipisci fugiat eum aperiam. Dolores quidem aliquam obcaecati doloremque pariatur architecto eum corrupti, quam rem accusamus ratione quis voluptatum vitae!
+        </p>
+        <br>
+        <p class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae facere adipisci fugiat eum aperiam. Dolores quidem aliquam obcaecati doloremque pariatur architecto eum corrupti, quam rem accusamus ratione quis voluptatum vitae!
+        </p>
+        <br>
+        <p class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae facere adipisci fugiat eum aperiam. Dolores quidem aliquam obcaecati doloremque pariatur architecto eum corrupti, quam rem accusamus ratione quis voluptatum vitae!
+        </p>
+    </div>
+
+    <script>
+        const Section = document.querySelector('section');
+        window.addEventListener("scroll",()=>{
+            var value = window.scrollY;
+            Section.style.clipPath = "circle("+ value+"px at center)"
+        })
+    </script>
+</body>
+</html>
